@@ -14,19 +14,19 @@ img {
 /* Barra de navegación */
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: white;
     font-family: Arial, sans-serif;
     border-bottom: 1px solid #ddd;
+    padding-right: 40px;
 }
 
 /* Logo */
-.navbar .logo {
-    height: 65px;
-    width: 99px;
-    margin-left: 170px;
+.navbar img {
+    height: 70px;
+    width: 105px;
+    margin-left: 195px;
 }
 
 /* Menú principal */
@@ -45,6 +45,8 @@ img {
     font-size: 18px;
     transition: color 0.3s;
     text-align: right;
+    position: relative;
+    top: 25px; right: 20px;
 }
 
 .navbar .menu a:hover {
@@ -54,19 +56,54 @@ img {
 /* Botones de acción */
 .navbar .actions {
     display: flex;
-    gap: 30px;
     align-items: center;
+    flex-direction: row;
+    position: relative;
+    right: 50px;
 }
 
-.navbar .actions a {
+.navbar .actions button {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    padding: 5px 15px;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 50px;
     color: black;
     transition: all 0.3s;
+}
+
+.location{
+    display: flex;
+}
+
+.location a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: 5px;
+    margin-right: 20px;
+}
+
+.location img{
+    width: 22px;
+    height: 30px;
+}
+
+.login-join{
+    display: flex;
+}
+
+.login{
+    width: 140px;
+    height: 30px;
+    background-color: white;
+    margin-right: 17px;
+}
+
+.join{
+    width: 70px;
 }
 
 .navbar .actions .join {
@@ -78,24 +115,177 @@ img {
     gap: 20px;
 }
 
-/* Icono de ubicación */
-.navbar .location {
+
+.highlight{
+    max-width: 100%;
+    height: 390px;
+    background-color: #a488c0;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.highlight img{
+    width: 675px;
+
+}
+
+.highlight h1{
+    font-size: 50px;
+    color: white;
+    max-width: 450px;
+    margin-left: 120px;
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+.highlight h2{
+    font-size: 19px;
+    color: white;
+    max-width: 570px;
+    margin-left: 70px;
+}
+
+.cafe-gratis{
+    max-width: 100%;
+    height: 390px;
+    background-color: #cba258;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
-    font-size: 14px;
-    color: black;
-    gap: 5px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
-.navbar .location i {
-    font-size: 39px;
+.cafe-gratis img{
+    width: 670px;
 }
 
-.experiencia{
+.cafe-gratis h1{
+    font-size: 50px;
+    color: #1e3932;
+    position: relative;
+    bottom: 40px;
+    margin-left: 140px;
+
+}
+
+.cafe-gratis h2{
+    font-size: 19px;
+    color: #1e3932;
+    max-width: 500px;
+    font-weight: 550;
+    margin-left: 120px;
+    position:relative;
+    bottom: 35px;
+}
+
+.cafe-gratis button{
+    color: #1e3932;
+    border: solid 1px #1e3932;
+    background-color:  #cba258;
+    height: 35px;
+    width: 115px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 120px;
+}
+
+.cafe-gratis button:hover{
+    cursor: pointer;
+}
+
+.exp{
     max-width: 100%;
-    
+    background-color: #d4e9e2;
+    height: 600px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 80px;
+    padding-left: 150px;
 }
 
+.exp img{
+    width: 380px;
+}
+
+.exp h1{
+    color: #00754a; 
+    font-size: 50px;
+    max-width: 500px;
+    position: relative;
+    bottom: 20px;
+}
+
+.exp h2{
+    color: #00754a;
+    font-size: 23px;
+    position: relative;
+    bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.exp button{
+    color: #00754a;
+    border: solid #00754a 1px;
+    height: 33px;
+    width: 110px;
+    background-color: #d4e9e2;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.exp button:hover{
+    cursor: pointer;
+}
+
+.unete{
+    max-width: 100%;
+    background-color: #d4e9e2;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-right: 130px;
+    padding-left: 100px;
+}
+
+.unete img{
+    width: 440px;
+    height: 460px;
+}
+
+.unete h1{
+    color: #00754a; 
+    font-size: 50px;
+    max-width: 500px;
+}
+
+.unete h2{
+    color: #00754a;
+    font-size: 20px;
+}
+
+.unete button{
+    color: #00754a;
+    border: solid #00754a 1px;
+    height: 33px;
+    width: 130px;
+    background-color: #d4e9e2;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.unete button:hover{
+    cursor: pointer;
+}
 
 /* Footer */
 footer {
